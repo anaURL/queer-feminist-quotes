@@ -1,0 +1,106 @@
+    body {
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+    section {
+    margin: 1%;
+  }
+  
+    h1,h2 {
+    color: black;
+    font-size: 8rem;
+    font-weight: 600;
+    line-height: 75%;
+    margin: 2%;
+    letter-spacing: -0.7rem;
+  }
+  
+    h1 span {
+    color:red;
+  }
+
+    h2 { 
+    font-size: 3rem;
+    letter-spacing: -0.2rem;
+    font-weight: 800;
+  }
+
+    h4 {
+    font-size: 1.5rem;
+    margin:0;
+}
+
+    ul {
+    display:flex;
+    flex-direction: row;
+    margin-top: 4%;
+    width:80%;
+  }
+
+    li {
+    list-style: none;
+    margin:0.5%; 
+    padding:0.5%;
+    border:2px solid #ccc; 
+    border-radius: 10px;
+    background-color: #fff;
+    color:white;
+  }
+
+  /* Quote list styling */ 
+
+  .quote-list-item-content, .quote-list-item-author, .quote--remove {
+    font-size: 1.5rem;
+    list-style: none;
+    margin: 2%;
+  }
+
+  .quote-list-item-content {
+    margin-top: 4%;
+    font-weight: 600;
+    color:black;
+  }
+
+    .quote-list-item-author {
+    font-weight: 400;
+    font-style: italic;
+  }
+
+    .quote--remove {
+    color: red;
+    text-decoration:none;
+  }
+
+/* Form styling */ 
+    form {
+    margin:  0 2%;
+    display: flex;
+    flex-direction: column;
+  }
+
+    .quote--author, .quote--add, .quote--content {
+    width: 50%;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    }
+     
+    .quote--add  {
+    margin-top:2%;
+    background: red;
+    font-size: 1.2rem;
+    cursor:pointer;
+     -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    }
+
+    @media only screen and (min-width: 300px) and (max-width: 576px) {
+      .quote--list, form {
+          margin: 4%;
+          max-width:80%;
+      }
+  }

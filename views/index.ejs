@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;500;600&family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+ 
+    <title>Queer Feminist Quotes</title>
+</head>
+
+<body>
+    <section class="quotes--container">
+        <h1> <span> queer </span> feminist quotes</h1>
+        <section class="quote">
+            <ul class="quote--list">
+                <% feministQuotes.forEach(details => { %>
+                    <li class="quote-list-item">
+                        <a href="/remove/<%= details._id %>" class="quote--remove"> x 
+                         </a>
+                        <div class="quote-list-item-content"><%= details.content %></div>
+                        <div class="quote-list-item-author"> - <%= details.author %></div>
+
+                    </li>
+                <% }) %>
+            </ul>
+        </section>
+        <hr> 
+
+    <section> 
+        <h2 class="hover-underline-animation"> add your favorite queer feminist quote </h2>
+            <form action="/" method="POST" class="quote--header">
+                   <h4> Author </h4> <input type="text" name="author" class="quote--author">
+                    <h4> Quote </h4> <textarea rows="4" cols="45" name="content" class="quote--content"></textarea>
+                    <input type="submit" class="quote--add" value="Add quote">
+            </form>
+            </section>
+
+    </section>
+</body>
+</html>
