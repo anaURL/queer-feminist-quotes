@@ -8,7 +8,7 @@ app.set("view engine", "ejs")
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }));
 
-//Connect to Mongo
+//Connect to Mongoose
 mongoose.connect(
     process.env.DB_CONNECTION, 
     { useNewUrlParser: true }, 
