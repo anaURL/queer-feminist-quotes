@@ -1,7 +1,7 @@
-const express = require("express"),
-const app = express(),
-const mongoose = require("mongoose"),
-const FeministQuote = require("./models/quotes"),
+const express = require("express")
+const app = express()
+const mongoose = require("mongoose")
+const FeministQuote = require("./models/quotes")
 require('dotenv').config()
 
 app.set("view engine", "ejs")
