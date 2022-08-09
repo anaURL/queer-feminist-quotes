@@ -1,6 +1,5 @@
 const express = require("express"),
 const app = express(),
-const PORT = 8000,
 const mongoose = require("mongoose"),
 const FeministQuote = require("./models/quotes"),
 require('dotenv').config()
@@ -56,6 +55,7 @@ app
     });
 
 //Start Server
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`Server is running on port`)
+})
 
